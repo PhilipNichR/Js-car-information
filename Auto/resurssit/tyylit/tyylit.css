@@ -1,0 +1,77 @@
+body {
+    background-color: cornsilk;
+    }
+    main, #napit{
+    display: grid;
+    justify-items: center;
+    }
+    .auto img {
+    height: 40px;
+    }
+    label, .selite {
+    font-weight: bold;
+    padding-right: 0.3em;
+    }
+    .kentat {
+    display: grid;
+    justify-items: left;
+    }
+    .viestialue {
+    font-weight: bold;
+    color: blue;
+    width: 13em;
+    }
+    table {
+    border-collapse: collapse;
+    margin-bottom: 1em;
+    }
+    table, td, th {
+    border: 1px solid black;
+    padding: 0.5em;
+    }
+    thead {
+    background-color: khaki;
+    }
+    tbody>tr:nth-child(even) {
+    background-color: #EFF3D1;
+    }
+    input[readonly] {
+    background-color: wheat;
+    }
+    .nappi {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+    width: 13em;
+    height: 2em;
+    border: 0.1em solid black;
+    border-radius: 0.5em;
+    box-shadow: 0.2em 0.2em 0.3em rgb(0, 0, 0);
+    margin-bottom: 0.3em;
+    margin-top: 0.3em;
+    background-color: brown;
+    color: white;
+    }
+    a.nappi{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    }
+    #autolomake {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    }
+    #autolomake > p {
+    display: grid;
+    justify-items: left;
+    grid-template-columns: 5.5em 1fr;
+    }
+    input:required {
+    background-color: rgb(250, 239, 241);
+    }
+    input:invalid {
+    box-shadow: 0 0 5px 1px red;
+    border-color: red;
+    border-width: 2px;
+    }

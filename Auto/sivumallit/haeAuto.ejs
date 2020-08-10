@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><%= paaotsikko %></title>
+    <link rel="stylesheet" href="/tyylit/tyylit.css" type="text/css">
+</head>
+    <body>
+        <main>
+            <h1><=% paaotsikko %></h1>
+            <form action ="<%= toiminto %>" method="post">
+                <p>
+                    <label for="autoId">AutoId:</label>
+                    <input type="text" id="autoId" name="autoId" size="5">
+                </p>
+                <button class="nappi" type="submit">Lähetä</button>
+            </form>
+            <a class="nappi" href="/">Valikko</a>
+        </main>
+    </body>
+</html>

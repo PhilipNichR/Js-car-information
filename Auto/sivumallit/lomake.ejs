@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title><%= paaotsikko %></title>
+    <link rel="stylesheet" href="/tyylit/tyylit.css" type="text/css">
+</head>
+    <body>
+        <main>
+        <h1><%= otsikko %></h1>
+            <form id="autolomake" action="<%= toiminto %>" method="POST">
+                <p>
+                <label for="autoId">AutoId:</label>
+                <input type="text" id="autoId" name="autoId" size="5"
+                  value="<%= autoId.arvo %>" required <%= autoId.vainluku %> >
+                </p>
+                <p>
+                <label for="merkki">Merkki:</label>
+                <input type="text" id="merkki" name="merkki" size="20"
+                  value="<%= merkki.arvo %>" required <%= merkki.vainluku %> >
+                </p>
+                <p>
+                <label for="rekisteri">Rekisteri:</label>
+                <input type="text" id="rekisteri" name="rekisteri" size="10"
+                   value="<%= rekisteri.arvo %>" <%= rekisteri.vainluku %> >
+                </p>
+                <p>
+                <label for="kuvapolku">Kuvapolku:</label>
+                <input type="text" id="kuvapolku" name="kuvapolku" size="30"
+                    value="<%= kuvapolku.arvo %>" <%= kuvapolku.vainluku %> >
+                </p>
+                <div id="napit">
+                <button class="nappi" type="submit">Lähetä</button>
+                <a class="nappi" href="/">Valikkoon</a>
+                </div>
+            </form>
+        </main>
+    </body>
+</html>

@@ -1,0 +1,26 @@
+{
+    "palvelin":"localhost",
+    "portti": 3306,
+    "paakayttaja":"root",
+    "paakayttajanSalasana":"",
+    "kayttaja":"saku",
+    "kayttajanSalasana":"salainen",
+    "poistaKayttaja":true,
+    "debugKaytossa":true,
+    "tietokanta":"autokanta",
+    "taulut":[
+    {
+    "taulunNimi":"auto",
+    "sarakkeet":[
+    "autoId integer not null primary key",
+    "merkki varchar(20) not null",
+    "rekisteri varchar(10)",
+    "kuvapolku varchar(255)"
+    ],
+    "tiedot":[
+    [1,"Hoppa","ABC-1","hoppa.png"],
+    [2,"Kaara","XYZ-123","kaara.png"]
+    ]
+    }
+    ]
+    }

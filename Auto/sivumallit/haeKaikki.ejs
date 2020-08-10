@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Kaikki autot</title>
+    <link rel="stylesheet" href="/tyylit/tyylit.css" type="text/css">
+</head>
+    <body>
+    <main>
+        <h2>Kaikki autot</h2>
+        <table>
+            <thead>
+            <tr>
+                <th>AutoId</th>
+                <th>Merkki</th>
+                <th>Rekisteri</th>
+                <th>Kuva</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% autot.forEach(auto => { %>
+            <tr>
+            <td>
+                <%= auto.autoId %>
+            </td>
+            <td>
+                <%= auto.merkki %>
+            </td>
+            <td>
+                <%= auto.rekisteri %>
+            </td>
+            <td class="auto">
+                <img src="/kuvat/<%= auto.kuvapolku %>"
+                alt="<%= auto.merkki %> merkkisen auton kuva">
+            </td>
+        </tr>
+        <% }); %>
+    </tbody>
+    </table>
+    <a class="nappi" href="/">Valikkoon</a>
+    </main>
+    </body>
+</html>
